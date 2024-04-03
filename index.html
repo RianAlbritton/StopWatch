@@ -7,21 +7,79 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Stop Watch</h1>
+<h1>Stop Watch</h1> <!--Title-->
 <br><br><br><br>
 <div class = "container">
-    <div id = "time">
+    <div id = "time"> <!--display of the timer-->
       00 : 00: 00: 000
     </div>
 
-    <div id = "buttons">
+    <div id = "buttons"> <!--buttons-->
         <button class = "button" id = "start"> START </button>
         <button class = "button" id = "stop"> STOP </button>
         <button class = "button" id = "zero"> ZERO </button>
     </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-auto">
+                <table class="table table-bordered table-hover" id="tab_logic">
+                    <thead>
+                        <tr>
+                            <th class="text-center">
+                                #
+                            </th>
+                            <th class="text-center">
+                                Event
+                            </th>
+                            <th class="text-center">
+                                Time
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                            <input type="text" name='name[]'  placeholder='Enter Event Name' class="form-control"/>
+                            </td>
+                            <td>
+                            <input type="number" name='time[]' placeholder='Enter Stopped Time' class="form-control"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                            <input type="text" name='name[]'  placeholder='Enter Event Name' class="form-control"/>
+                            </td>
+                            <td>
+                            <input type="number" name='time[]' placeholder='Enter Stopped Time' class="form-control"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                            <input type="text" name='name[]'  placeholder='Enter Event Name' class="form-control"/>
+                            </td>
+                            <td>
+                            <input type="number" name='time[]' placeholder='Enter Stopped Time' class="form-control"/>
+                            </td>
+                        </tr>
+    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+      
+
+    
 </div>
 
 
     <script src="script.js"></script>   
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>

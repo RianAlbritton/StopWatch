@@ -1,8 +1,11 @@
 
+
+/*an array for all values in the timer*/
 let [msecond,second,minute,hour] = [0,0,0,0];
 let timerRun = document.querySelector('#time');
 let int = null;
 
+/*event Listeners for all 3 buttons and how to respond on a click*/
 document.getElementById('start').addEventListener('click', ()=>{
     if(int!==null){
         clearInterval(int);
@@ -20,6 +23,7 @@ document.getElementById('zero').addEventListener('click', ()=>{
     timerRun.innerHTML = '00 : 00 : 00 : 000 ';
 });
 
+/*function for the timer*/
 function displayTimer(){
     msecond += 10;
     if(msecond == 1000){
