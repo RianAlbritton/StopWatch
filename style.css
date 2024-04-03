@@ -52,7 +52,7 @@ h1 { /*for Stop Watch title*/
 
 }
 
-.container-fluid{
+.eventcontainer{ /*to style the table*/
     display: flex;
     flex-direction:row;
     justify-content: center;
